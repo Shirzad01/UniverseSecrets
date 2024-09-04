@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "359593814045",
+    "project_id": "secretsuniverse-c2468",
+    "storage_bucket": "secretsuniverse-c2468.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359593814045:android:dfe6c82c74f97b5fb07ef4",
+        "android_client_info": {
+          "package_name": "com.universe.secrets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE5b3OQyWGRMxdYnkc0Mu6a9Wvb01fssg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
