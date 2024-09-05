@@ -1,8 +1,6 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
-
-import '../Animations.dart';
-import 'Animation.dart';
+import '../animation.dart';
+import 'animation.dart';
 
 class Mars extends StatelessWidget {
   const Mars({super.key});
@@ -30,9 +28,9 @@ class Mars extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned.fill(child: DrawerAnimation()),
+            const Positioned.fill(child: DrawerAnimation()),
             Scrollbar(
-              radius: Radius.circular(10),
+              radius: const Radius.circular(10),
               child: SingleChildScrollView(
                 child: Column(
                   children: [

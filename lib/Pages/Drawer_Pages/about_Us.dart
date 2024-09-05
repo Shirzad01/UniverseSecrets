@@ -95,36 +95,34 @@ class _AboutUsState extends State<AboutUs> {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index) {
-                return Container(
-                  child: SafeArea(
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.all(
-                                MediaQuery.of(context).size.width / 20),
-                            child: const Text(
-                              "من یک فرد علاقمند به کیهان و نجوم هستم و این برنامه را به صورت مستقل ایجاد کرده‌ام. با اشتیاق و انگیزه، این برنامه را برای به اشتراک گذاشتن اطلاعات علمی و شگفتی‌های کیهان با جامعه طراحی کرده‌ام.\n هدف من در این برنامه، آموزش و آگاهی بخشیدن به کاربران درباره آخرین کشف‌ها، نجومی‌ها، سیارات و پدیده‌های فراکیهانی است. تمامی محتوا و اطلاعات ارائه شده در برنامه توسط من مورد بررسی دقیق و تأیید علمی قرار می‌گیرد.\nاگر در جستجوی پاسخ به سوالاتتان درباره کیهان، سیارات، ستارگان و سایر مسائل فضایی هستید، برنامه من بهترین منبع برای شماست. با استفاده از برنامه، می‌توانید به دنیای شگفت‌انگیز نجوم و کیهان وارد شوید و از جذابیت‌ها و رمزهای آن بیشتر بفهمید.\nمن امیدوارم که برنامه (آشنایی با رموز کیهان)  برای شما لحظاتی پر از آموزش و سرگرمی فراهم کند و به شما کمک کند تا به اطلاعات جدیدی درباره کیهان و نجوم دست پیدا کنید. از حمایت شما سپاسگزاریم و همیشه به دنبال بهبود و ارتقاء برنامه خود هستم.\n  همچنین، اگر سوال یا نیاز به راهنمایی درباره نجوم دارید، من آماده پاسخگویی به شما هستم.",
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(fontSize: 20),
-                              textDirection: TextDirection.rtl,
-                            ),
-                          ),
-                          const Text(
-                            "توسعه دهنده برنامه:",
-                            style: TextStyle(
-                                fontSize: 22, fontWeight: FontWeight.bold),
+                return SafeArea(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(
+                              MediaQuery.of(context).size.width / 20),
+                          child: const Text(
+                            "من یک فرد علاقمند به کیهان و نجوم هستم و این برنامه را به صورت مستقل ایجاد کرده‌ام. با اشتیاق و انگیزه، این برنامه را برای به اشتراک گذاشتن اطلاعات علمی و شگفتی‌های کیهان با جامعه طراحی کرده‌ام.\n هدف من در این برنامه، آموزش و آگاهی بخشیدن به کاربران درباره آخرین کشف‌ها، نجومی‌ها، سیارات و پدیده‌های فراکیهانی است. تمامی محتوا و اطلاعات ارائه شده در برنامه توسط من مورد بررسی دقیق و تأیید علمی قرار می‌گیرد.\nاگر در جستجوی پاسخ به سوالاتتان درباره کیهان، سیارات، ستارگان و سایر مسائل فضایی هستید، برنامه من بهترین منبع برای شماست. با استفاده از برنامه، می‌توانید به دنیای شگفت‌انگیز نجوم و کیهان وارد شوید و از جذابیت‌ها و رمزهای آن بیشتر بفهمید.\nمن امیدوارم که برنامه (آشنایی با رموز کیهان)  برای شما لحظاتی پر از آموزش و سرگرمی فراهم کند و به شما کمک کند تا به اطلاعات جدیدی درباره کیهان و نجوم دست پیدا کنید. از حمایت شما سپاسگزاریم و همیشه به دنبال بهبود و ارتقاء برنامه خود هستم.\n  همچنین، اگر سوال یا نیاز به راهنمایی درباره نجوم دارید، من آماده پاسخگویی به شما هستم.",
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(fontSize: 20),
                             textDirection: TextDirection.rtl,
                           ),
-                          const Text(
-                            "\n Mohammad Haroon Shirzad \nمحمد هارون شیرزاد",
-                            style: TextStyle(
-                                fontSize: 22, fontWeight: FontWeight.bold),
-                            textAlign: TextAlign.center,
-                          ),
-                          const Text("")
-                        ],
-                      ),
+                        ),
+                        const Text(
+                          "توسعه دهنده برنامه:",
+                          style: TextStyle(
+                              fontSize: 22, fontWeight: FontWeight.bold),
+                          textDirection: TextDirection.rtl,
+                        ),
+                        const Text(
+                          "\n Mohammad Haroon Shirzad \nمحمد هارون شیرزاد",
+                          style: TextStyle(
+                              fontSize: 22, fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        ),
+                        const Text("")
+                      ],
                     ),
                   ),
                 );

@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'Animations.dart';
-import 'CustomSearchDelegate.dart';
-import 'Pages/Drawer_Pages/About_Us.dart';
-import 'Pages/Earth.dart';
-import 'Pages/Jupeter.dart';
-import 'Pages/Mars.dart';
-import 'Pages/Milky-way.dart';
-import 'Pages/Neptun.dart';
-import 'Pages/Sun.dart';
-import 'Pages/Uranos.dart';
-import 'Pages/Zuhal.dart';
+import 'animation.dart';
+import 'customSearchDelegate.dart';
+import 'Pages/Drawer_Pages/about_Us.dart';
+import 'Pages/earth.dart';
+import 'Pages/jupeter.dart';
+import 'Pages/mars.dart';
+import 'Pages/milky-way.dart';
+import 'Pages/neptun.dart';
+import 'Pages/sun.dart';
+import 'Pages/uranos.dart';
+import 'Pages/zuhal.dart';
 import 'Pages/mercure.dart';
 import 'Pages/solarSystem.dart';
 import 'Pages/spaceInfo.dart';
@@ -61,8 +61,8 @@ class _HomeScreenState extends State<HomeScreen> {
       'assets/nepton.jpg',
     ];
     List pages = [
-      const spaceInfo(),
-      MilkyWay(),
+      const SpaceInfo(),
+      const MilkyWay(),
       const SolarSystem(),
       const Sun(),
       const Mercure(),
@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       drawer: Drawer(
           child: Stack(children: [
-        const Positioned.fill(child: DrawerAnimation()),
+         const Positioned.fill(child: DrawerAnimation()),
         ListView(
           children: [
             UserAccountsDrawerHeader(

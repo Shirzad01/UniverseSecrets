@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'Pages/Milky-way.dart';
+import 'Pages/milky-way.dart';
 import 'Pages/spaceInfo.dart';
-import 'Pages/Earth.dart';
-import 'Pages/Jupeter.dart';
-import 'Pages/Mars.dart';
-import 'Pages/Neptun.dart';
-import 'Pages/Sun.dart';
-import 'Pages/Uranos.dart';
-import 'Pages/Zuhal.dart';
+import 'Pages/earth.dart';
+import 'Pages/jupeter.dart';
+import 'Pages/mars.dart';
+import 'Pages/neptun.dart';
+import 'Pages/sun.dart';
+import 'Pages/uranos.dart';
+import 'Pages/zuhal.dart';
 import 'Pages/mercure.dart';
 import 'Pages/solarSystem.dart';
 import 'Pages/venus.dart';
@@ -29,7 +29,7 @@ class CutomSearchDelegate extends SearchDelegate{
   ];
   Widget? selectedPage;
   List SearchPages = [
-    const spaceInfo(),
+    const SpaceInfo(),
     MilkyWay(),
     SolarSystem(),
     const Sun(),

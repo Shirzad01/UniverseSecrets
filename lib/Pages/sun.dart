@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../Animations.dart';
-import 'Animation.dart';
+import '../animation.dart';
+import 'animation.dart';
 
 class Sun extends StatelessWidget {
   const Sun({super.key});
@@ -28,9 +28,9 @@ class Sun extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          Positioned.fill(child: DrawerAnimation()),
+          const Positioned.fill(child: DrawerAnimation()),
           Scrollbar(
-            radius: Radius.circular(10),
+            radius: const Radius.circular(10),
             child: SingleChildScrollView(
               child: Column(
                 children: [

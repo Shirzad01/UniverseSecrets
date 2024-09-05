@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../Animations.dart';
-import 'Animation.dart';
+import '../animation.dart';
+import 'animation.dart';
 
 
 class venus extends StatelessWidget {

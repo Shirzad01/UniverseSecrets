@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../Animations.dart';
-import 'Animation.dart';
+import '../animation.dart';
+import 'animation.dart';
 
 
 class Neptun extends StatelessWidget {
@@ -32,7 +32,7 @@ class Neptun extends StatelessWidget {
           children: [
             const Positioned.fill(child: DrawerAnimation()),
             Scrollbar(
-              radius: Radius.circular(10),
+              radius: const Radius.circular(10),
               child: SingleChildScrollView(
                 child: Column(
                   children: [

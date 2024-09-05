@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Animations.dart';
+import 'animation.dart';
 
 class Favorite extends StatefulWidget {
   const Favorite({super.key});

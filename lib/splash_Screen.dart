@@ -1,8 +1,9 @@
 import 'dart:async';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
-import 'Introduction Screen.dart';
+import 'introduction Screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -23,6 +24,7 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   void initState() {
     super.initState();
+    _logFirstOpenEvent();
     _controller =
         AnimationController(vsync: this, duration: const Duration(seconds: 3));
     animation1 = Tween<double>(begin: 40, end: 20).animate(CurvedAnimation(
@@ -46,9 +48,19 @@ class _SplashScreenState extends State<SplashScreen>
     });
     Timer(const Duration(seconds: 7), () {
       setState(() {
-        Navigator.pushReplacement(context, PageTransition(Introduction()));
+        Navigator.pushReplacement(context, PageTransition(const Introduction()));
       });
     });
+  }
+
+  Future<void> _logFirstOpenEvent() async {
+    await FirebaseAnalytics.instance.logEvent(
+      name: 'SplashScreen',
+      parameters: {
+        'screen': 'SplashScreen',
+        'time': DateTime.now().toIso8601String(),
+      },
+    );
   }
 
   @override
@@ -146,8 +158,8 @@ class PageTransition extends PageRouteBuilder {
               alignment: Alignment.bottomCenter,
               child: SizeTransition(
                 sizeFactor: animation,
-                child: page,
                 axisAlignment: 0,
+                child: page,
               ),
             );
           },
@@ -155,6 +167,8 @@ class PageTransition extends PageRouteBuilder {
 }
 
 class SecondPage extends StatelessWidget {
+  const SecondPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

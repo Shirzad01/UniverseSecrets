@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../Animations.dart';
-import 'Animation.dart';
+import '../animation.dart';
+import 'animation.dart';
 
 
-class spaceInfo extends StatelessWidget {
-  const spaceInfo({super.key});
+class SpaceInfo extends StatelessWidget {
+  const SpaceInfo({super.key});
   @override
   Widget build(BuildContext context) {
     final List<Map<String, String>> images = [

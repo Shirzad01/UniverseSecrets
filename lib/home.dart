@@ -1,6 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'HomeScreen.dart';
+import 'homeScreen.dart';
 import 'Videos/Videos.dart';
 import 'favorite_Page.dart';
 

@@ -1,10 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../Animations.dart';
+import '../animation.dart';
 
 class MilkyWay extends StatefulWidget {
-  MilkyWay({Key? key}) : super(key: key);
+  const MilkyWay({super.key});
 
   @override
   State<MilkyWay> createState() => _MilkyWayState();
@@ -98,4 +98,4 @@ class _MilkyWayState extends State<MilkyWay> with TickerProviderStateMixin {
 }
 
 Widget buildImage(String images, int index) =>
-    Container(child: Image.asset(images, fit: BoxFit.cover));
+    Image.asset(images, fit: BoxFit.cover);
